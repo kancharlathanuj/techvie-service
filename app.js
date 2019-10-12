@@ -6,7 +6,7 @@ const app = express();
 var cors = require('cors');
 const appRoute =  require('./Routes/postRoutes');
 
-mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://techvie:Inteli03@@cluster0-ezolo.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 app.use(bodyParser.json());
 app.use(morgan('dev'));
